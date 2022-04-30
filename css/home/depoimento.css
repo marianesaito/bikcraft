@@ -42,6 +42,10 @@
   position: absolute;
 }
 
+.block-mobile{
+  display: none;
+}
+
 @media (max-width: 800px) {
   .depoimento {
     grid-template-columns: 1fr;
@@ -57,7 +61,22 @@
   }
 
   .depoimento p::before {
-    left: -30px;
+    left: -50px;
     top: -12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento p::before {
+    display: none;
+  }
+  .depoimento p::after{
+    display: none;
+  }
+  .block-mobile{
+    display: block;
+  }
+  .block-web{
+    display: none;
   }
 }
