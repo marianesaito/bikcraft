@@ -19,6 +19,7 @@
   font-weight: 600;
   text-transform: uppercase;
   font-family: "poppins";
+  max-width: max-content;
 }
 
 .botao:hover {
@@ -53,10 +54,10 @@
   color: var(--cor-0);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .botao {
     font-size: 1rem;
     line-height: 1.5;
-    padding: 16px 8px;
+    padding: 16px 16px;
   }
 }

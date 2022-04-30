@@ -1,6 +1,5 @@
 .seguros-bg {
   background-color: var(--cor-11);
-  height: 796px;
 }
 
 .seguros {
@@ -52,12 +51,18 @@
   position: relative;
 }
 
-.seguros li::before {
+.seguros-item li::before {
   content: "";
   display: inline-block;
   width: 13px;
   height: 9px;
-  background-image: url("../../img/icones/lista.svg;");
+  background-image: url("../../img/icones/lista.svg");
   position: absolute;
   left: -21px;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
 }
