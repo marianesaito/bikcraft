@@ -39,20 +39,27 @@
     </div>
 
     <form class="orcamento container" action="./">
+
+      <!-- div que contem a seleção de orçamento ou produto -->
       <div class="orcamento-produto">
         <h2 class="font-1-xs cor-5">Bikecraft ou Seguro?</h2>
 
+        <!-- botões radio com o mesmo tipo para ver qual o cliente seleciona -->
         <input type="radio" name="tipo" value="bikecraft" id="bikecraft">
         <label for="bikecraft">Bikecraft</label>
-
         <input type="radio" name="tipo" value="seguro" id="seguro">
         <label for="seguro">Seguro</label>
 
+        <!-- só aparece quando orçamento bikecraft selecionado -->
         <div class="orcamento-conteudo" id="orcamento-bikecraft">
-          <h2 class="font-1-l cor-0">Escolha a sua (BIKECRAFT)</h2>
+          <h2 class="font-1-m cor-0">Escolha a sua (BIKECRAFT)</h2>
+          <p class="font-1-m cor-0">Esse é um conteudo teste</p>
         </div>
+
+        <!-- só aparece quando orçamento seguro selecionado -->
         <div class="orcamento-conteudo" id="orcamento-seguro">
-          <h2 class="font-1-l cor-0">Escolha o plano</h2>
+          <h2 class="font-1-m cor-0">Escolha o plano</h2>
+          <p class="font-1-m cor-0">Esse é um conteudo teste</p>
         </div>
 
       </div>
