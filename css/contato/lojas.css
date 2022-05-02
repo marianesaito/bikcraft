@@ -54,19 +54,16 @@
     padding-top: 20px;
     padding-bottom: 40px;
   }
-
   .lojas h2{
     margin-bottom: 32px;
   }
-
   .lojas-conteudo{
     grid-template-columns: 1fr;
   }
-
 }
+
 @media (max-width: 600px){
 .lojas{
   grid-template-columns: 1fr;
 }
-
 }
