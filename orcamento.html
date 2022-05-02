@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <form class="orcamento container" action="./">
+    <form class="orcamento container" action="./orcamento.html">
 
       <!-- div que contem a seleção de orçamento ou produto -->
       <div class="orcamento-produto">
@@ -47,19 +47,77 @@
         <!-- botões radio com o mesmo tipo para ver qual o cliente seleciona -->
         <input type="radio" name="tipo" value="bikecraft" id="bikecraft">
         <label for="bikecraft">Bikecraft</label>
+        
         <input type="radio" name="tipo" value="seguro" id="seguro">
         <label for="seguro">Seguro</label>
 
         <!-- só aparece quando orçamento bikecraft selecionado -->
         <div class="orcamento-conteudo" id="orcamento-bikecraft">
-          <h2 class="font-1-xs cor-5">Escolha a sua </h2>
+          <h2 class="font-1-xs cor-5">Escolha a sua</h2>
+
 
           <input type="radio" name="produto" value="nimbus" id="nimbus">
           <label for="nimbus">Nimbus Stark <span>R$ 4999</span></label>
+
+          <!-- quando a nimbus estiver selecionada -->
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" alt="">
+                Motor Elétrico
+              </li>
+              <li><img src="./img/icones/carbono.svg" alt="">
+                Fibra de Carbono
+              </li>
+              <li><img src="./img/icones/velocidade.svg" alt="">
+                50 km/h
+              </li>
+              <li><img src="./img/icones/rastreador.svg" alt="">
+                Rastreador
+            </ul>
+            <img src="./img/bicicletas/nimbus.jpg" alt="">
+          </div>
+
           <input type="radio" name="produto" value="magic" id="magic">
           <label for="magic">Magic Might <span>R$ 5999</span></label>
+
+          <!-- quando a nimbus estiver selecionada -->
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" alt="">
+                Motor Elétrico
+              </li>
+              <li><img src="./img/icones/carbono.svg" alt="">
+                Fibra de Carbono
+              </li>
+              <li><img src="./img/icones/velocidade.svg" alt="">
+                50 km/h
+              </li>
+              <li><img src="./img/icones/rastreador.svg" alt="">
+                Rastreador
+            </ul>
+            <img src="./img/bicicletas/nebula.jpg" alt="">
+          </div>
+
           <input type="radio" name="produto" value="nebula" id="nebula">
           <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
+
+          <!-- quando a nimbus estiver selecionada -->
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+              <li><img src="./img/icones/eletrica.svg" alt="">
+                Motor Elétrico
+              </li>
+              <li><img src="./img/icones/carbono.svg" alt="">
+                Fibra de Carbono
+              </li>
+              <li><img src="./img/icones/velocidade.svg" alt="">
+                50 km/h
+              </li>
+              <li><img src="./img/icones/rastreador.svg" alt="">
+                Rastreador
+            </ul>
+            <img src="./img/bicicletas/magic.jpg" alt="">
+          </div>
         </div>
 
         <!-- só aparece quando orçamento seguro selecionado -->
