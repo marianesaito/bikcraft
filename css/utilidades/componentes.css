@@ -20,6 +20,8 @@
   text-transform: uppercase;
   font-family: "poppins";
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {

@@ -10,7 +10,9 @@ ul {
   list-style: none;
 }
 
-a {
+a,
+.contato-meios {
+  font-style: normal;
   text-decoration: none;
   color: inherit;
 }
