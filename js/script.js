@@ -17,7 +17,7 @@ function ativarLink(link) {
 // para cada item dessa lista "links", ele roda a função ativarLink usando o item como argumento da função
 links.forEach(ativarLink);
 
-// ativar itens do orçamento
+// ativar itens do orçamento seguro
 
 //puxa os parametros extras da url dada a location: search busca tudo dps do ? e URLSearchParams retorna os parametros
 const parametros = new URLSearchParams(location.search);
@@ -31,5 +31,3 @@ function ativarProduto(parametro) {
 }
 
 parametros.forEach(ativarProduto);
-
-
