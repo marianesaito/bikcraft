@@ -54,13 +54,35 @@ function ativarPergunta(event) {
 
   //muda o atributo 'aria-expanded' para true na pergunta (esse true já é o valor da constate ativa)
   pergunta.setAttribute("aria-expanded", ativa);
-
-
 }
 
 //adiciona um event listener para todas as perguntas que estão como button
 function eventosPerguntas(pergunta) {
   pergunta.addEventListener("click", ativarPergunta);
 }
-
 perguntas.forEach(eventosPerguntas);
+
+//galeria de bicicletas
+
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width: 920px)").matches;
+
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img) {
+  img.addEventListener("click", trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
+
+//animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
